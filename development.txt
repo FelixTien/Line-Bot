@@ -1,0 +1,13 @@
+1. Go to Line Developers -> Messaging API
+https://developers.line.biz/console/channel/2011528391/messaging-api
+
+2. Paste the Webhook URL below
+
+-----------------------------------------------------------------------
+
+
+Domain Webhook URL:
+https://line-bot-ten-gamma.vercel.app/callback
+
+Development Webhook URL:
+https://genre-obsession-comment.ngrok-free.dev/callback
