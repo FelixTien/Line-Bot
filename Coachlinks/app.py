@@ -76,10 +76,33 @@ def handle_message(event):
                     ]
                 )
             )
+        elif text in ["1", "1.", "1. 桌球"]:
+            sport_text = (
+                "Coachlinks「桌球」技術筆記正在積極開發中 $\n"
+                "$ 歡迎追蹤官方社群，掌握第一手發布資訊！\n\n"
+                "招募桌球教練中！有興趣合作的教練歡迎直接私訊聯繫 $"
+            )
+
+            sport_text_indices = [i for i, char in enumerate(sport_text) if char == '$']
+
+            sport_text_emojis = [
+                Emoji(index=sport_text_indices[0], product_id="5ac21a18040ab15980c9b43e", emoji_id="136"),
+                Emoji(index=sport_text_indices[1], product_id="5ac21542031a6752fb806d55", emoji_id="221"),
+                Emoji(index=sport_text_indices[2], product_id="5ac21e6c040ab15980c9b444", emoji_id="041")
+            ]
+
+            line_bot_api.reply_message(
+                ReplyMessageRequest(
+                    reply_token=event.reply_token,
+                    messages=[
+                        TextMessage(text=sport_text, emojis=sport_text_emojis)
+                    ]
+                )
+            )
         elif text in ["2", "2.", "2. 羽球"]:
-            pingpang_text = (
-                "以下為 Coachlinks 的官方「羽球」技術筆記$\n"
-                "$請幫我選擇您有興趣的技術項目名稱~\n\n"
+            sport_text = (
+                "以下為 Coachlinks 的官方「羽球」技術筆記 $\n"
+                "$ 請幫我選擇您有興趣的技術項目名稱！\n\n"
                 "2-1. 網前勾對角\n"
                 "2-2. 後場過渡球\n"
                 "2-3. 正手發球\n"
@@ -97,18 +120,64 @@ def handle_message(event):
                 "2-15. 網前推球"
             )
 
-            pingpang_text_indices = [i for i, char in enumerate(pingpang_text) if char == '$']
+            sport_text_indices = [i for i, char in enumerate(sport_text) if char == '$']
 
-            pingpang_text_emojis = [
-                Emoji(index=pingpang_text_indices[0], product_id="5ac21a18040ab15980c9b43e", emoji_id="136"),
-                Emoji(index=pingpang_text_indices[1], product_id="5ac21a18040ab15980c9b43e", emoji_id="087")
+            sport_text_emojis = [
+                Emoji(index=sport_text_indices[0], product_id="5ac21a18040ab15980c9b43e", emoji_id="136"),
+                Emoji(index=sport_text_indices[1], product_id="5ac21a18040ab15980c9b43e", emoji_id="087")
             ]
 
             line_bot_api.reply_message(
                 ReplyMessageRequest(
                     reply_token=event.reply_token,
                     messages=[
-                        TextMessage(text=pingpang_text, emojis=pingpang_text_emojis)
+                        TextMessage(text=sport_text, emojis=sport_text_emojis)
+                    ]
+                )
+            )
+        elif text in ["3", "3.", "3. 健身"]:
+            sport_text = (
+                "Coachlinks「健身」技術筆記正在積極開發中 $\n"
+                "$ 歡迎追蹤官方社群，掌握第一手發布資訊！\n\n"
+                "招募健身教練中！有興趣合作的教練歡迎直接私訊聯繫 $"
+            )
+
+            sport_text_indices = [i for i, char in enumerate(sport_text) if char == '$']
+
+            sport_text_emojis = [
+                Emoji(index=sport_text_indices[0], product_id="5ac21a18040ab15980c9b43e", emoji_id="136"),
+                Emoji(index=sport_text_indices[1], product_id="5ac21542031a6752fb806d55", emoji_id="221"),
+                Emoji(index=sport_text_indices[2], product_id="5ac21e6c040ab15980c9b444", emoji_id="041")
+            ]
+
+            line_bot_api.reply_message(
+                ReplyMessageRequest(
+                    reply_token=event.reply_token,
+                    messages=[
+                        TextMessage(text=sport_text, emojis=sport_text_emojis)
+                    ]
+                )
+            )
+        elif text in ["4", "4.", "4. 匹克球"]:
+            sport_text = (
+                "Coachlinks「匹克球」技術筆記正在積極開發中 $\n"
+                "$ 歡迎追蹤官方社群，掌握第一手發布資訊！\n\n"
+                "招募匹克球教練中！有興趣合作的教練歡迎直接私訊聯繫 $"
+            )
+
+            sport_text_indices = [i for i, char in enumerate(sport_text) if char == '$']
+
+            sport_text_emojis = [
+                Emoji(index=sport_text_indices[0], product_id="5ac21a18040ab15980c9b43e", emoji_id="136"),
+                Emoji(index=sport_text_indices[1], product_id="5ac21542031a6752fb806d55", emoji_id="221"),
+                Emoji(index=sport_text_indices[2], product_id="5ac21e6c040ab15980c9b444", emoji_id="041")
+            ]
+
+            line_bot_api.reply_message(
+                ReplyMessageRequest(
+                    reply_token=event.reply_token,
+                    messages=[
+                        TextMessage(text=sport_text, emojis=sport_text_emojis)
                     ]
                 )
             )

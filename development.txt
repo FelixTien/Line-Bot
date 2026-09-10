@@ -5,9 +5,18 @@ https://developers.line.biz/console/channel/2011528391/messaging-api
 
 -----------------------------------------------------------------------
 
+Remote
 
 Domain Webhook URL:
 https://line-bot-ten-gamma.vercel.app/callback
 
+* After pushing to GitHub, the deployment will be done automatically
+
+-----------------------------------------------------------------------
+
+Local
+
 Development Webhook URL:
 https://genre-obsession-comment.ngrok-free.dev/callback
+
+* Need to open the ngrok virtual temp server & VSCode Python debugger first before verifying the Webhook
