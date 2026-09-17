@@ -8,7 +8,7 @@ https://developers.line.biz/console/channel/2011528391/messaging-api
 Remote
 
 Domain Webhook URL:
-https://line-bot-ten-gamma.vercel.app/callback
+https://line-bot-three-chi.vercel.app/callback
 
 * After pushing to GitHub, the deployment will be done automatically
 
