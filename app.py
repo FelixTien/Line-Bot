@@ -54,19 +54,6 @@ def handle_message(event):
     with ApiClient(configuration) as api_client:
         line_bot_api = MessagingApi(api_client)
         
-        if text == "test":
-            test = "測試"
-
-            line_bot_api.reply_message(
-                ReplyMessageRequest(
-                    reply_token=event.reply_token,
-                    messages=[
-                        TextMessage(text=test)
-                    ]
-                )
-            )
-            
-        
         if text == "我想獲取 Coachlinks 技術筆記":
             skill_note_text_1 = "收到！\n請問您想獲取哪項運動項目的技術筆記呢？$"
             skill_note_text_1_indices = [i for i, char in enumerate(skill_note_text_1) if char == '$']
